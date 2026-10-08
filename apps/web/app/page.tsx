@@ -20,7 +20,7 @@ import { pageMeta } from "../lib/seo";
 
 export const metadata = pageMeta({
   description:
-    "Atelier Nord is a Brooklyn interior design and architecture studio crafting calm homes, considered light and bespoke furnishings since 2012.",
+    "Kiah is a Brooklyn interior design and architecture studio crafting calm homes, considered light and bespoke furnishings since 2012.",
   path: "/",
 });
 
@@ -33,7 +33,7 @@ export default function HomePage() {
         <Container>
           <StudioSplit
             title="A small team, and the founder on every project."
-            lede="Atelier Nord designs apartments, townhouses and retreats. We take on eight projects a year, so the person who draws your first sketch is there when the last shelf is styled."
+            lede="Kiah designs apartments, townhouses and retreats. We take on eight projects a year, so the person who draws your first sketch is there when the last shelf is styled."
             stats={stats}
           />
         </Container>

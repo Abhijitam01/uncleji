@@ -18,7 +18,7 @@ export function ogCard({
       <div tw="flex h-full w-full flex-col justify-between bg-[#fbfbf8] px-20 py-[72px] text-[#1d201e]">
         <div tw="flex w-full items-center justify-between border-b border-[#c8cac2] pb-6 text-[26px]">
           <span tw="flex items-center">
-            Atelier Nord
+            Kiah
             <span tw="ml-3 flex h-4 w-4 rounded-full bg-[#94321f]" />
           </span>
           <span tw="text-[#5f635d]">{eyebrow}</span>

@@ -346,7 +346,7 @@ export const scenes = {
        </g>
        <circle cx="470" cy="300" r="26" fill="#191510"/>
        <circle cx="470" cy="300" r="10" fill="#b08d57"/>
-       <text x="500" y="292" font-family="DM Sans, sans-serif" font-size="22" fill="#191510">Atelier Nord</text>
+       <text x="500" y="292" font-family="DM Sans, sans-serif" font-size="22" fill="#191510">Kiah</text>
        <text x="500" y="318" font-family="DM Sans, sans-serif" font-size="17" fill="#6f6a5f">68 Java St, Greenpoint</text>`,
   },
   "team-elena": {

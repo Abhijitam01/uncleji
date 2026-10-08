@@ -9,7 +9,7 @@ export async function generateImageMetadata({ params }: { params: Promise<{ slug
   return [
     {
       id: "og",
-      alt: project ? `${project.title} — ${project.location}` : "Atelier Nord project",
+      alt: project ? `${project.title} — ${project.location}` : "Kiah project",
       size: ogSize,
       contentType: ogContentType,
     },

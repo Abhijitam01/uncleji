@@ -15,13 +15,13 @@ export function Logo({ href = "/", light = false, className }: { href?: string; 
     <Link
       href={href}
       className={cn(
-        "group inline-flex items-center gap-[0.4em] text-[1.125rem] leading-none font-semibold tracking-[-0.035em] text-ink",
+        "group inline-flex items-center gap-[0.32em] text-[1.4rem] leading-none font-semibold tracking-[-0.045em] text-ink",
         light && "text-paper",
         className,
       )}
-      aria-label="Atelier Nord, home"
+      aria-label="Kiah, home"
     >
-      Atelier Nord
+      Kiah
       <NorthMark className="text-falu transition-transform duration-500 ease-out group-hover:rotate-[360deg] group-active:scale-90" />
     </Link>
   );

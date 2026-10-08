@@ -22,8 +22,8 @@ const serif = Newsreader({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Atelier Nord — Interior Design & Architecture Studio",
-    template: "%s — Atelier Nord",
+    default: "Kiah — Interior Design & Architecture Studio",
+    template: "%s — Kiah",
   },
   description: site.description,
   applicationName: site.name,
@@ -35,12 +35,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: site.name,
-    title: "Atelier Nord — Interior Design & Architecture Studio",
+    title: "Kiah — Interior Design & Architecture Studio",
     description: site.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Atelier Nord — Interior Design & Architecture Studio",
+    title: "Kiah — Interior Design & Architecture Studio",
     description: site.description,
   },
   robots: {

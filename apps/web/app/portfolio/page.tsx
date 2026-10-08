@@ -4,7 +4,7 @@ import { BreadcrumbJsonLd, pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta({
   title: "Portfolio",
-  description: "Selected residential, apartment, retreat and commercial projects by Atelier Nord.",
+  description: "Selected residential, apartment, retreat and commercial projects by Kiah.",
   path: "/portfolio",
 });
 

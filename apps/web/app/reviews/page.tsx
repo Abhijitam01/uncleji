@@ -4,7 +4,7 @@ import { BreadcrumbJsonLd, JsonLd, pageMeta, reviewsGraph } from "../../lib/seo"
 
 export const metadata = pageMeta({
   title: "Reviews",
-  description: "Unedited notes from the people who let Atelier Nord redraw their daily lives.",
+  description: "Unedited notes from the people who let Kiah redraw their daily lives.",
   path: "/reviews",
 });
 

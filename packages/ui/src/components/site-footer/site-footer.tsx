@@ -143,7 +143,7 @@ export function SiteFooter({
       </div>
       <div className="shell pb-[var(--gutter)]">
         <div className="grid grid-cols-2 gap-px overflow-hidden rounded-media border border-paper/14 bg-paper/14 min-[900px]:grid-cols-[1.4fr_1fr_0.7fr_0.7fr_auto]">
-          <Cell label="Studio" className="max-[899px]:col-span-2">Atelier Nord, interior design and architecture</Cell>
+          <Cell label="Studio" className="max-[899px]:col-span-2">Kiah, interior design and architecture</Cell>
           <Cell label="Local time">
             <StudioClock light className="text-[0.95rem] text-paper" />
           </Cell>
@@ -164,8 +164,8 @@ export function SiteFooter({
         </div>
       </div>
       <div className="overflow-hidden" aria-hidden="true">
-        <p className="shell -mt-[1vw] translate-y-[9%] text-[18.5vw] leading-[0.8] font-medium tracking-[-0.065em] whitespace-nowrap text-transparent [-webkit-text-stroke:1px_rgba(251,251,248,0.22)] select-none">
-          Atelier Nord
+        <p className="shell -mt-[4vw] text-[50vw] leading-[0.9] font-medium tracking-[-0.065em] whitespace-nowrap text-transparent [-webkit-text-stroke:1px_rgba(251,251,248,0.22)] select-none">
+          Kiah
         </p>
       </div>
     </footer>

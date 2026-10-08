@@ -1,12 +1,12 @@
 import type { ArtName } from "@atelier/art";
 
 export const site = {
-  name: "Atelier Nord",
-  url: "https://ateliernord.studio",
+  name: "Kiah",
+  url: "https://kiah.studio",
   description:
     "A warm, human-centred interior design and architecture studio in Brooklyn crafting calm homes, considered light and bespoke furnishings.",
   blurb: "An interior design & architecture studio crafting calm, personal homes since 2012.",
-  email: "hello@ateliernord.studio",
+  email: "hello@kiah.studio",
   phone: "+1 (212) 555-0148",
   phoneHref: "tel:+12125550148",
   address: ["68 Java St, Greenpoint", "Brooklyn, NY 11222"],
@@ -21,9 +21,9 @@ export const site = {
   locality: "Greenpoint, Brooklyn",
   foundingYear: "2012",
   socials: [
-    { label: "Instagram", short: "Ig", href: "https://www.instagram.com/ateliernord" },
-    { label: "Pinterest", short: "Pi", href: "https://www.pinterest.com/ateliernord" },
-    { label: "LinkedIn", short: "In", href: "https://www.linkedin.com/company/atelier-nord" },
+    { label: "Instagram", short: "Ig", href: "https://www.instagram.com/kiah" },
+    { label: "Pinterest", short: "Pi", href: "https://www.pinterest.com/kiah" },
+    { label: "LinkedIn", short: "In", href: "https://www.linkedin.com/company/kiah" },
   ],
 } as const;
 

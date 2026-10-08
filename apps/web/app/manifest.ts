@@ -3,8 +3,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Atelier Nord",
-    short_name: "Atelier Nord",
+    name: "Kiah",
+    short_name: "Kiah",
     description: site.description,
     start_url: "/",
     display: "standalone",

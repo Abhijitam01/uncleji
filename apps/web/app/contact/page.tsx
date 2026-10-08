@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd, pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta({
   title: "Contact",
-  description: "Tell us about your home and book a free consultation with Atelier Nord in Greenpoint, Brooklyn.",
+  description: "Tell us about your home and book a free consultation with Kiah in Greenpoint, Brooklyn.",
   path: "/contact",
 });
 

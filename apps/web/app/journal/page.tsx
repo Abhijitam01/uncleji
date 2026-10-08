@@ -4,7 +4,7 @@ import { BreadcrumbJsonLd, pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta({
   title: "Journal",
-  description: "What the Atelier Nord studio is sketching, specifying and arguing about this month.",
+  description: "What the Kiah studio is sketching, specifying and arguing about this month.",
   path: "/journal",
 });
 
