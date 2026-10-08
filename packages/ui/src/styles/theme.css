@@ -1,0 +1,253 @@
+@import "tailwindcss";
+
+@source "..";
+@source "../../../../apps/web";
+
+@theme inline {
+  --font-sans: var(--font-familjen), "Familjen Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), "Newsreader", Georgia, serif;
+
+  --color-ink: #1d201e;
+  --color-graphite: #2a2e2b;
+  --color-paper: #fbfbf8;
+  --color-vellum: #ecede7;
+  --color-stone: #c8cac2;
+  --color-muted: #5f635d;
+  --color-line: rgba(29, 32, 30, 0.14);
+  --color-line-strong: rgba(29, 32, 30, 0.32);
+  --color-falu: #94321f;
+  --color-falu-bright: #c65a40;
+
+  --radius-media: 4px;
+
+  --ease-draw: cubic-bezier(0.22, 0.61, 0.21, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-micro: cubic-bezier(0, 0, 0.2, 1);
+
+  --animate-rise: rise-in 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-line: line-in 1100ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade: fade-in 700ms cubic-bezier(0, 0, 0.2, 1) both;
+  --animate-acc: acc-open 260ms cubic-bezier(0, 0, 0.2, 1);
+  --animate-check: check-pop 420ms cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-blink: blink 2.4s ease-in-out infinite;
+}
+
+@keyframes rise-in {
+  from { opacity: 0; translate: 0 0.75rem; }
+  to { opacity: 1; translate: 0 0; }
+}
+@keyframes line-in {
+  from { translate: 0 108%; }
+  to { translate: 0 0; }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes acc-open {
+  from { opacity: 0; translate: 0 -6px; }
+  to { opacity: 1; translate: 0 0; }
+}
+@keyframes check-pop {
+  from { opacity: 0; scale: 0.6; }
+  to { opacity: 1; scale: 1; }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+@keyframes stroke-draw {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes progress {
+  from { scale: 0 1; }
+  to { scale: 1 1; }
+}
+@keyframes cue {
+  from { translate: 0 -100%; }
+  to { translate: 0 260%; }
+}
+@keyframes dim-x {
+  from { scale: 0 1; }
+}
+@keyframes dim-y {
+  from { scale: 1 0; }
+}
+
+:root {
+  --gutter: clamp(1.25rem, 3.2vw, 3rem);
+  --header: 4rem;
+}
+
+@media (min-width: 960px) {
+  :root { --header: 4.75rem; }
+}
+
+@utility shell {
+  width: min(100% - (var(--gutter) * 2), 1600px);
+  margin-inline: auto;
+}
+
+/* Type scale: one grotesk for structure, one serif for reading. */
+@utility type-display {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: clamp(3rem, 6.4vw + 0.4rem, 8.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+}
+@utility type-h1 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: clamp(2.9rem, 6.4vw + 0.4rem, 8.75rem);
+  line-height: 0.9;
+  letter-spacing: -0.052em;
+}
+@utility type-h2 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: clamp(2.3rem, 4.2vw + 0.6rem, 6rem);
+  line-height: 0.94;
+  letter-spacing: -0.048em;
+}
+@utility type-h3 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: clamp(1.35rem, 0.8vw + 1.05rem, 1.9rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+@utility type-lead {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.25rem, 0.7vw + 1.02rem, 1.6rem);
+  line-height: 1.4;
+  letter-spacing: -0.008em;
+}
+@utility type-read {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.08rem, 0.25vw + 1rem, 1.22rem);
+  line-height: 1.62;
+}
+@utility type-label {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Any Scene rendered with .linework becomes its own pencil drawing. */
+.linework :is(rect, circle, ellipse, path, polygon, polyline, line) {
+  fill: none !important;
+  stroke: var(--line, var(--color-ink)) !important;
+  stroke-width: var(--line-w, 1.15px) !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.linework g { filter: none !important; }
+.linework.is-drawing :is(rect, circle, ellipse, path, polygon, polyline, line) {
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: stroke-draw 2.6s var(--ease-draw) forwards;
+}
+.linework.is-drawing :is(rect, circle, ellipse, path, polygon, polyline, line):nth-child(3n + 2) { animation-delay: 160ms; }
+.linework.is-drawing :is(rect, circle, ellipse, path, polygon, polyline, line):nth-child(3n) { animation-delay: 320ms; }
+
+/* Home hero: scroll finishes the drawing, then the room fills the screen. */
+.hero-stage {
+  --p: 0;
+  --q: clamp(0, calc((var(--p) - 0.04) * 2.4), 1);
+  --g: clamp(0, calc((var(--p) - 0.38) * 1.75), 1);
+}
+.hero-cue { display: none; }
+@media (min-width: 960px) and (prefers-reduced-motion: no-preference) {
+  .hero-stage { height: 260svh; }
+  .hero-pin { position: sticky; top: 0; height: 100svh; overflow: clip; }
+  .hero-head {
+    position: absolute;
+    z-index: 2;
+    top: calc(var(--header) + 3.5svh);
+    left: var(--gutter);
+    right: var(--gutter);
+    translate: 0 calc(var(--g) * -16svh);
+    opacity: calc(1 - var(--g) * 2.4);
+  }
+  .hero-foot {
+    position: absolute;
+    z-index: 2;
+    left: var(--gutter);
+    bottom: 7svh;
+    width: min(36vw, 31rem);
+    translate: 0 calc(var(--g) * 10svh);
+    opacity: calc(1 - var(--g) * 2.8);
+  }
+  .hero-head, .hero-foot, .hero-figure { margin: 0; padding: 0; }
+  .hero-head { width: auto; }
+  .hero-figure { position: absolute; inset: 0; display: block; width: auto; }
+  .hero-frame {
+    position: absolute;
+    aspect-ratio: auto;
+    top: calc(36svh * (1 - var(--g)));
+    right: calc(var(--gutter) * (1 - var(--g)));
+    bottom: calc(7svh * (1 - var(--g)));
+    left: calc(55vw * (1 - var(--g)));
+    border-radius: calc(4px * (1 - var(--g)));
+  }
+  .hero-dim-x { position: absolute; top: calc(36svh - 1.9rem); left: 55vw; right: var(--gutter); opacity: calc(1 - var(--g) * 5); }
+  .hero-dim-y { position: absolute; top: 36svh; bottom: 7svh; right: calc(var(--gutter) * 0.5 - 0.4rem); opacity: calc(1 - var(--g) * 5); }
+  .hero-color { clip-path: inset(0 calc((1 - var(--q)) * 100%) 0 0) !important; transition: none !important; }
+  .hero-lines { opacity: calc(1 - var(--g) * 1.6) !important; transition: none !important; }
+  .hero-cue { display: inline-flex; opacity: calc(1 - var(--q) * 3); }
+}
+
+/* Work reel: pinned horizontal travel on desktop, native swipe on touch. */
+.reel-card { --c: 1; }
+.reel-card .reel-color { clip-path: inset(0 calc((1 - var(--c)) * 100%) 0 0); }
+.reel-card .reel-lines { opacity: calc(1 - var(--c)); }
+@media (min-width: 960px) and (prefers-reduced-motion: no-preference) {
+  .reel-pin { position: sticky; top: 0; height: 100svh; overflow: clip; }
+  .reel-track { overflow: visible !important; scroll-snap-type: none !important; will-change: transform; }
+}
+
+/* Drafting cursor. */
+@media (hover: hover) and (pointer: fine) {
+  html.has-cursor, html.has-cursor * { cursor: none !important; }
+  html.has-cursor :is(input, textarea, select) { cursor: text !important; }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; overflow-x: clip; scroll-padding-top: calc(var(--header) + 1rem); }
+  body { overflow-x: clip; font-feature-settings: "kern", "liga"; }
+  body.no-scroll { overflow: hidden; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  em { font-style: italic; }
+  h1, h2, h3, h4 {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+  ::selection { background: var(--color-falu); color: var(--color-paper); }
+  :focus-visible { outline: 2px solid var(--color-falu); outline-offset: 3px; border-radius: 2px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html[data-header="shown"] .section-nav {
+  top: calc(var(--header) + 0.5rem);
+}
