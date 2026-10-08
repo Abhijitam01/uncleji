@@ -111,15 +111,22 @@ export default async function ProjectPage({ params }: { params: Promise<Params> 
               <Reveal
                 key={`${name}-${position}`}
                 delay={(position % 2) * 100}
-                className={`overflow-hidden rounded-media bg-vellum ${gallerySpans[position % gallerySpans.length]}`}
+                className={gallerySpans[position % gallerySpans.length]}
               >
-                <Scene name={name} className="size-full" />
+                <figure className="group relative size-full overflow-hidden rounded-media bg-paper bg-[linear-gradient(rgba(29,32,30,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(29,32,30,0.05)_1px,transparent_1px)] bg-[size:24px_24px]">
+                  <Scene name={name} className="absolute inset-0 size-full transition-opacity duration-700 ease-out group-hover:opacity-20" />
+                  <Scene name={name} decorative className="linework absolute inset-0 size-full opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100" />
+                  <figcaption className="type-label absolute bottom-3 left-3 flex items-center gap-3 rounded-full bg-paper/85 py-1.5 pr-3.5 pl-3 backdrop-blur-sm">
+                    <span className="text-falu tabular-nums">Plate {String(position + 1).padStart(2, "0")}</span>
+                    <span className="capitalize">{name.replaceAll("-", " ")}</span>
+                  </figcaption>
+                </figure>
               </Reveal>
             ))}
           </div>
         </Container>
       </Section>
-      <Link href={`/portfolio/${next.slug}`} className="group block border-t border-line-strong bg-vellum">
+      <Link href={`/portfolio/${next.slug}`} data-cursor="view" className="group block border-t border-line-strong bg-vellum transition-colors duration-500 hover:bg-stone/40">
         <Container className="grid items-center gap-x-6 gap-y-6 py-[clamp(3rem,7vw,6rem)] min-[860px]:grid-cols-12">
           <div className="min-[860px]:col-span-8">
             <p className="type-label text-muted">Next project</p>
@@ -132,8 +139,8 @@ export default async function ProjectPage({ params }: { params: Promise<Params> 
               {next.location}, {next.scope.toLowerCase()}
             </p>
           </div>
-          <div className="aspect-[4/3] overflow-hidden rounded-media min-[860px]:col-span-3 min-[860px]:col-start-10">
-            <Scene name={next.art} decorative className="size-full transition-[scale] duration-700 ease-out group-hover:scale-[1.04]" />
+          <div className="aspect-[4/3] overflow-hidden rounded-media transition-[translate] duration-700 ease-out group-hover:-translate-x-3 min-[860px]:col-span-3 min-[860px]:col-start-10">
+            <Scene name={next.art} decorative className="size-full transition-[scale] duration-700 ease-out group-hover:scale-[1.06]" />
           </div>
         </Container>
       </Link>

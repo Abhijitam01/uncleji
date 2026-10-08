@@ -151,7 +151,7 @@ export function SiteFooter({
           <Cell label="Sheet">© {year}</Cell>
           <a
             href="#main"
-            className="group grid content-between gap-3 bg-ink p-4 transition-colors duration-200 ease-micro hover:bg-paper hover:text-ink max-[899px]:col-span-2 min-[900px]:min-w-40"
+            className="group grid content-between gap-3 bg-ink p-4 transition-colors duration-200 ease-micro hover:bg-paper hover:text-ink min-[900px]:min-w-40"
           >
             <span className="type-label text-paper/42 transition-colors duration-200 group-hover:text-muted">Return</span>
             <span className="flex items-center justify-between gap-4 text-[0.95rem]">

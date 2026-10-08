@@ -82,7 +82,7 @@ export function WorkReel({ items, total }: { items: readonly Item[]; total: numb
       <div className="reel-pin flex flex-col justify-center py-[clamp(4rem,8vw,6rem)] min-[960px]:py-0">
         <div
           ref={trackRef}
-          className="reel-track flex snap-x snap-mandatory items-start gap-[clamp(1.25rem,2.5vw,2.5rem)] overflow-x-auto px-[var(--gutter)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="reel-track flex snap-x snap-mandatory items-start gap-[clamp(1.25rem,2.5vw,2.5rem)] scroll-px-[var(--gutter)] overflow-x-auto px-[var(--gutter)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           <div className="flex w-[min(80vw,26rem)] shrink-0 snap-start flex-col justify-between self-stretch py-1 min-[960px]:w-[30vw]">
             <div>
@@ -90,7 +90,7 @@ export function WorkReel({ items, total }: { items: readonly Item[]; total: numb
               <h2 className="type-h2 mt-8">Rooms we would happily live in.</h2>
             </div>
             <div className="mt-10 grid gap-4">
-              <p className="type-read max-w-[28ch] text-muted">Every one began as a drawing. Keep scrolling to watch them become rooms.</p>
+              <p className="type-read max-w-[28ch] text-muted">Every one began as a drawing.<span className="max-[959px]:hidden"> Keep scrolling to watch them become rooms.</span></p>
               <TextLink href="/portfolio" className="w-fit">
                 All {total} projects
               </TextLink>
