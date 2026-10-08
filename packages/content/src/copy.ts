@@ -1,4 +1,4 @@
-import type { ArtName } from "@atelier/art";
+import type { ArtName } from "@kiah/art";
 
 export const site = {
   name: "Kiah",

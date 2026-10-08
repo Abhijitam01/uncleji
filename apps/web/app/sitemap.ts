@@ -1,4 +1,4 @@
-import { posts, projects, publishedIso } from "@atelier/content";
+import { posts, projects, publishedIso } from "@kiah/content";
 import type { MetadataRoute } from "next";
 import { absoluteUrl } from "../lib/seo";
 

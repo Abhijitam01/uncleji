@@ -1,5 +1,5 @@
 {
-  "name": "@atelier/web",
+  "name": "@kiah/web",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@atelier/art": "workspace:*",
-    "@atelier/content": "workspace:*",
-    "@atelier/ui": "workspace:*",
+    "@kiah/art": "workspace:*",
+    "@kiah/content": "workspace:*",
+    "@kiah/ui": "workspace:*",
     "next": "^16.4.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"

@@ -1,4 +1,4 @@
-import { getPost } from "@atelier/content";
+import { getPost } from "@kiah/content";
 import { ogCard, ogContentType, ogSize } from "../../../lib/og";
 
 export const size = ogSize;

@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Familjen_Grotesk, Newsreader } from "next/font/google";
-import { footerColumns, hours, nav, posts, projects, site } from "@atelier/content";
-import { Cursor, SiteFooter, SiteHeader } from "@atelier/ui";
+import { footerColumns, hours, nav, posts, projects, site } from "@kiah/content";
+import { Cursor, SiteFooter, SiteHeader } from "@kiah/ui";
 import { JsonLd, studioGraph } from "../lib/seo";
 import "./globals.css";
 

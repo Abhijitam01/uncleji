@@ -1,6 +1,6 @@
-import { Scene } from "@atelier/art";
-import { getAdjacentProjects, projects, quoteForProject } from "@atelier/content";
-import { Container, PageHero, Reveal, Section, TextLink } from "@atelier/ui";
+import { Scene } from "@kiah/art";
+import { getAdjacentProjects, projects, quoteForProject } from "@kiah/content";
+import { Container, PageHero, Reveal, Section, TextLink } from "@kiah/ui";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BreadcrumbJsonLd, JsonLd, pageMeta, projectGraph } from "../../../lib/seo";

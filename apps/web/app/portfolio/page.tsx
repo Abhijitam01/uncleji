@@ -1,5 +1,5 @@
-import { projectFilters, projects } from "@atelier/content";
-import { Container, PageHero, PortfolioBrowser, Section } from "@atelier/ui";
+import { projectFilters, projects } from "@kiah/content";
+import { Container, PageHero, PortfolioBrowser, Section } from "@kiah/ui";
 import { BreadcrumbJsonLd, pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta({

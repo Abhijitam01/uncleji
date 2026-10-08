@@ -1,11 +1,11 @@
 {
-  "name": "@atelier/content",
+  "name": "@kiah/content",
   "version": "0.0.0",
   "private": true,
   "exports": {
     ".": "./src/index.ts"
   },
   "dependencies": {
-    "@atelier/art": "workspace:*"
+    "@kiah/art": "workspace:*"
   }
 }

@@ -1,4 +1,4 @@
-import { posts, press, processSteps, projects, reviewQuote, reviews, serviceSummaries, stats, values } from "@atelier/content";
+import { posts, press, processSteps, projects, reviewQuote, reviews, serviceSummaries, stats, values } from "@kiah/content";
 import {
   Accordion,
   Container,
@@ -11,7 +11,7 @@ import {
   Section,
   SectionHead,
   TextLink,
-} from "@atelier/ui";
+} from "@kiah/ui";
 import { Hero } from "../components/hero";
 import { Statement } from "../components/statement";
 import { StudioSplit } from "../components/studio-split";

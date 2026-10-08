@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["@atelier/ui", "@atelier/content", "@atelier/art"],
+  transpilePackages: ["@kiah/ui", "@kiah/content", "@kiah/art"],
   agentRules: false,
 };
 

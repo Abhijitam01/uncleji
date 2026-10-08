@@ -1,5 +1,5 @@
-import { press, ratings, reviews } from "@atelier/content";
-import { Container, PageHero, PressRow, Quote, QuoteGrid, Reveal, Section } from "@atelier/ui";
+import { press, ratings, reviews } from "@kiah/content";
+import { Container, PageHero, PressRow, Quote, QuoteGrid, Reveal, Section } from "@kiah/ui";
 import { BreadcrumbJsonLd, JsonLd, pageMeta, reviewsGraph } from "../../lib/seo";
 
 export const metadata = pageMeta({

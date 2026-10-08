@@ -10,13 +10,13 @@ importers:
 
   apps/web:
     dependencies:
-      '@atelier/art':
+      '@kiah/art':
         specifier: workspace:*
         version: link:../../packages/art
-      '@atelier/content':
+      '@kiah/content':
         specifier: workspace:*
         version: link:../../packages/content
-      '@atelier/ui':
+      '@kiah/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -60,13 +60,13 @@ importers:
 
   packages/content:
     dependencies:
-      '@atelier/art':
+      '@kiah/art':
         specifier: workspace:*
         version: link:../art
 
   packages/ui:
     dependencies:
-      '@atelier/art':
+      '@kiah/art':
         specifier: workspace:*
         version: link:../art
       '@hugeicons/core-free-icons':

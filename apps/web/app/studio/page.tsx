@@ -1,6 +1,6 @@
-import { Scene } from "@atelier/art";
-import { milestones, stats, team, values } from "@atelier/content";
-import { Container, PageHero, Reveal, Section, SectionHead, ValueGrid } from "@atelier/ui";
+import { Scene } from "@kiah/art";
+import { milestones, stats, team, values } from "@kiah/content";
+import { Container, PageHero, Reveal, Section, SectionHead, ValueGrid } from "@kiah/ui";
 import { StudioSplit } from "../../components/studio-split";
 import { BreadcrumbJsonLd, pageMeta } from "../../lib/seo";
 

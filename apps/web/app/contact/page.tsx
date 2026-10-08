@@ -1,6 +1,6 @@
-import { Scene } from "@atelier/art";
-import { budgetRanges, hours, projectTypes, site } from "@atelier/content";
-import { ContactForm, Container, PageHero, Section, StudioClock, TextLink } from "@atelier/ui";
+import { Scene } from "@kiah/art";
+import { budgetRanges, hours, projectTypes, site } from "@kiah/content";
+import { ContactForm, Container, PageHero, Section, StudioClock, TextLink } from "@kiah/ui";
 import { BreadcrumbJsonLd, pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta({

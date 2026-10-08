@@ -1,4 +1,4 @@
-import { Scene, type ArtName } from "@atelier/art";
+import { Scene, type ArtName } from "@kiah/art";
 import Link from "next/link";
 import { cn } from "../../cn";
 

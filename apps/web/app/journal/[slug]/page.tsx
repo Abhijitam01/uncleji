@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
-import { Scene } from "@atelier/art";
-import { getPost, posts, publishedIso, relatedPosts, site } from "@atelier/content";
-import { Container, PageHero, PostCard, PostGrid, Reveal, Section, TextLink } from "@atelier/ui";
+import { Scene } from "@kiah/art";
+import { getPost, posts, publishedIso, relatedPosts, site } from "@kiah/content";
+import { Container, PageHero, PostCard, PostGrid, Reveal, Section, TextLink } from "@kiah/ui";
 import { BreadcrumbJsonLd, JsonLd, articleGraph, pageMeta } from "../../../lib/seo";
 
 type Params = { slug: string };

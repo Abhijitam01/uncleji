@@ -1,5 +1,5 @@
-import { faqs, processSteps, serviceRows } from "@atelier/content";
-import { Accordion, Container, PageHero, ProcessSteps, Section, SectionHead, SectionNav, ServiceRow } from "@atelier/ui";
+import { faqs, processSteps, serviceRows } from "@kiah/content";
+import { Accordion, Container, PageHero, ProcessSteps, Section, SectionHead, SectionNav, ServiceRow } from "@kiah/ui";
 import { BreadcrumbJsonLd, JsonLd, faqGraph, pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta({

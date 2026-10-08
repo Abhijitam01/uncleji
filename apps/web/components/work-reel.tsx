@@ -1,7 +1,7 @@
 "use client";
 
-import { Scene, type ArtName } from "@atelier/art";
-import { TextLink, cn } from "@atelier/ui";
+import { Scene, type ArtName } from "@kiah/art";
+import { TextLink, cn } from "@kiah/ui";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 

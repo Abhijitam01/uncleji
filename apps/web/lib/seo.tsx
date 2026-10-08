@@ -1,4 +1,4 @@
-import { faqs, posts, projects, reviews, site, type Post, type Project } from "@atelier/content";
+import { faqs, posts, projects, reviews, site, type Post, type Project } from "@kiah/content";
 import type { Metadata } from "next";
 
 export function absoluteUrl(path = "/") {

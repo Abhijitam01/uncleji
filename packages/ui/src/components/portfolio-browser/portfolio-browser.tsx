@@ -1,6 +1,6 @@
 "use client";
 
-import { Scene, type ArtName } from "@atelier/art";
+import { Scene, type ArtName } from "@kiah/art";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "../../cn";

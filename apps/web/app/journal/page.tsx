@@ -1,5 +1,5 @@
-import { posts } from "@atelier/content";
-import { Container, PageHero, PostCard, PostGrid, Reveal, Section } from "@atelier/ui";
+import { posts } from "@kiah/content";
+import { Container, PageHero, PostCard, PostGrid, Reveal, Section } from "@kiah/ui";
 import { BreadcrumbJsonLd, pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta({

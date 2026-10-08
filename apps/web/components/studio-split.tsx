@@ -1,7 +1,7 @@
 "use client";
 
-import { Scene, type ArtName } from "@atelier/art";
-import { Reveal, Stats, TextLink } from "@atelier/ui";
+import { Scene, type ArtName } from "@kiah/art";
+import { Reveal, Stats, TextLink } from "@kiah/ui";
 import { useEffect, useRef } from "react";
 
 function Signature() {

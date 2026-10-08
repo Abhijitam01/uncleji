@@ -3,9 +3,9 @@
   "private": true,
   "packageManager": "pnpm@10.30.3",
   "scripts": {
-    "dev": "pnpm --filter @atelier/web dev",
-    "build": "pnpm --filter @atelier/web build",
-    "start": "pnpm --filter @atelier/web start",
-    "typecheck": "pnpm --filter @atelier/web typecheck"
+    "dev": "pnpm --filter @kiah/web dev",
+    "build": "pnpm --filter @kiah/web build",
+    "start": "pnpm --filter @kiah/web start",
+    "typecheck": "pnpm --filter @kiah/web typecheck"
   }
 }

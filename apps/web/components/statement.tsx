@@ -1,6 +1,6 @@
 "use client";
 
-import { ValueGrid } from "@atelier/ui";
+import { ValueGrid } from "@kiah/ui";
 import { useEffect, useRef } from "react";
 
 const sentence =

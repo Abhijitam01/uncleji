@@ -1,4 +1,4 @@
-import type { ArtName } from "@atelier/art";
+import type { ArtName } from "@kiah/art";
 import { posts } from "./posts";
 import { press } from "./press";
 import { projects } from "./projects";

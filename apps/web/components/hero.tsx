@@ -1,7 +1,7 @@
 "use client";
 
-import { Scene } from "@atelier/art";
-import { Button, Dimension, NorthMark, cn } from "@atelier/ui";
+import { Scene } from "@kiah/art";
+import { Button, Dimension, NorthMark, cn } from "@kiah/ui";
 import { useEffect, useRef, useState } from "react";
 
 const lines = ["Homes drawn", "around the people", "who live in them."];

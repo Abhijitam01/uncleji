@@ -1,4 +1,4 @@
-import { Button, Container, Drawing } from "@atelier/ui";
+import { Button, Container, Drawing } from "@kiah/ui";
 
 export default function NotFound() {
   return (
