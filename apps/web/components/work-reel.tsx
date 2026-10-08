@@ -33,6 +33,19 @@ export function WorkReel({ items, total }: { items: readonly Item[]; total: numb
       distance = Math.max(0, track.scrollWidth - window.innerWidth);
       stage.style.height = `${distance + window.innerHeight}px`;
     };
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const updateStack = () => {
+      frame = 0;
+      const centre = window.innerHeight * 0.5;
+      for (const card of cards) {
+        const rect = card.getBoundingClientRect();
+        const offset = Math.abs(rect.top + rect.height / 2 - centre) / (window.innerHeight * 0.6);
+        card.style.setProperty("--c", Math.min(1, Math.max(0, 1.4 - offset * 1.4)).toFixed(3));
+      }
+    };
+    const onStackScroll = () => {
+      if (!frame) frame = requestAnimationFrame(updateStack);
+    };
     const update = () => {
       frame = 0;
       const box = stage.getBoundingClientRect();
@@ -56,10 +69,15 @@ export function WorkReel({ items, total }: { items: readonly Item[]; total: numb
     const bind = () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
+      window.removeEventListener("scroll", onStackScroll);
       if (!pinned.matches) {
         stage.style.height = "";
         track.style.transform = "";
         cards.forEach((card) => card.style.removeProperty("--c"));
+        if (!reduce.matches) {
+          updateStack();
+          window.addEventListener("scroll", onStackScroll, { passive: true });
+        }
         return;
       }
       measure();
@@ -74,6 +92,7 @@ export function WorkReel({ items, total }: { items: readonly Item[]; total: numb
       pinned.removeEventListener("change", bind);
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
+      window.removeEventListener("scroll", onStackScroll);
     };
   }, []);
 
@@ -82,14 +101,14 @@ export function WorkReel({ items, total }: { items: readonly Item[]; total: numb
       <div className="reel-pin flex flex-col justify-center py-[clamp(4rem,8vw,6rem)] min-[960px]:py-0">
         <div
           ref={trackRef}
-          className="reel-track flex snap-x snap-mandatory items-start gap-[clamp(1.25rem,2.5vw,2.5rem)] scroll-px-[var(--gutter)] overflow-x-auto px-[var(--gutter)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="reel-track flex flex-col gap-14 px-[var(--gutter)] min-[960px]:flex-row min-[960px]:items-start min-[960px]:gap-[clamp(1.25rem,2.5vw,2.5rem)]"
         >
-          <div className="flex w-[min(80vw,26rem)] shrink-0 snap-start flex-col justify-between self-stretch py-1 min-[960px]:w-[30vw]">
+          <div className="flex flex-col justify-between py-1 min-[960px]:w-[30vw] min-[960px]:shrink-0 min-[960px]:self-stretch">
             <div>
               <p className="type-label border-t border-line-strong pt-4 text-muted">Selected work</p>
               <h2 className="type-h2 mt-8">Rooms we would happily live in.</h2>
             </div>
-            <div className="mt-10 grid gap-4">
+            <div className="mt-6 grid gap-4 min-[960px]:mt-10">
               <p className="type-read max-w-[28ch] text-muted">Every one began as a drawing.<span className="max-[959px]:hidden"> Keep scrolling to watch them become rooms.</span></p>
               <TextLink href="/portfolio" className="w-fit">
                 All {total} projects
@@ -101,7 +120,7 @@ export function WorkReel({ items, total }: { items: readonly Item[]; total: numb
               key={item.slug}
               href={`/portfolio/${item.slug}`}
               data-cursor="view"
-              className="reel-card group block w-[76vw] shrink-0 snap-start min-[960px]:w-auto"
+              className="reel-card group block min-[960px]:shrink-0"
             >
               <div className={cn("relative overflow-hidden rounded-media bg-paper", shapes[index % shapes.length])}>
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(29,32,30,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(29,32,30,0.05)_1px,transparent_1px)] bg-[size:24px_24px]" />
@@ -124,7 +143,7 @@ export function WorkReel({ items, total }: { items: readonly Item[]; total: numb
           <Link
             href="/portfolio"
             data-cursor="view"
-            className="group flex aspect-[4/5] w-[76vw] min-[960px]:aspect-auto min-[960px]:h-[min(62svh,40rem)] min-[960px]:w-[min(70vw,24rem)] shrink-0 snap-start flex-col justify-between rounded-media bg-ink p-6 text-paper transition-colors duration-300 hover:bg-falu"
+            className="group flex aspect-[16/10] min-[960px]:aspect-auto min-[960px]:h-[min(62svh,40rem)] min-[960px]:w-[min(70vw,24rem)] flex-col justify-between rounded-media bg-ink min-[960px]:shrink-0 p-6 text-paper transition-colors duration-300 hover:bg-falu"
           >
             <span className="type-label text-paper/55">Portfolio</span>
             <span className="type-h2">
@@ -136,7 +155,7 @@ export function WorkReel({ items, total }: { items: readonly Item[]; total: numb
               <path d="M2 12h19M14 5l7 7-7 7" fill="none" stroke="currentColor" strokeWidth="1.2" />
             </svg>
           </Link>
-          <span className="w-px shrink-0" aria-hidden="true" />
+          <span className="hidden w-px shrink-0 min-[960px]:block" aria-hidden="true" />
         </div>
       </div>
     </section>

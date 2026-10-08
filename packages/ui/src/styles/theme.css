@@ -221,6 +221,7 @@
 
 @layer base {
   html { scroll-behavior: smooth; overflow-x: clip; scroll-padding-top: calc(var(--header) + 1rem); }
+  html { overflow-x: clip; }
   body { overflow-x: clip; font-feature-settings: "kern", "liga"; }
   body.no-scroll { overflow: hidden; }
   button, input, select, textarea { font: inherit; color: inherit; }
