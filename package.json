@@ -1,0 +1,11 @@
+{
+  "name": "atelier-nord",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "scripts": {
+    "dev": "pnpm --filter @atelier/web dev",
+    "build": "pnpm --filter @atelier/web build",
+    "start": "pnpm --filter @atelier/web start",
+    "typecheck": "pnpm --filter @atelier/web typecheck"
+  }
+}
