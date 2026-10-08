@@ -81,9 +81,9 @@ const months: Record<string, string> = {
 };
 
 export function publishedIso(date: string) {
-  const match = /^([A-Za-z]{3}) (\d{1,2}), (\d{4})$/.exec(date);
+  const match = /^(\d{1,2}) ([A-Za-z]{3}) (\d{4})$/.exec(date);
   if (!match) return date;
-  const month = months[match[1] ?? ""];
+  const month = months[match[2] ?? ""];
   if (!month) return date;
-  return `${match[3]}-${month}-${(match[2] ?? "1").padStart(2, "0")}`;
+  return `${match[3]}-${month}-${(match[1] ?? "1").padStart(2, "0")}`;
 }

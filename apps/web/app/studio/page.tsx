@@ -22,7 +22,7 @@ export default function StudioPage() {
       <Section tight>
         <Container>
           <StudioSplit
-            title="It began at a kitchen table in Greenpoint."
+            title="It began at a kitchen table in Shahpur Jat."
             lede="Two chairs, one client and a stubborn idea: interiors should serve mornings, not photo shoots."
             extra="Today we are nine people: designers, an architect, a joinery specialist and a very patient bookkeeper. We work across apartments, townhouses and the occasional cabin in the woods, and we stay small on purpose so every home gets the founder’s eye from first sketch to final styling."
             ctaHref="/portfolio"

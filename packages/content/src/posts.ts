@@ -2,7 +2,7 @@ export const posts = [
   {
     "slug": "why-limewash",
     "title": "Why we specify limewash almost everywhere",
-    "date": "Aug 12, 2026",
+    "date": "12 Aug 2026",
     "category": "Materials",
     "readTime": "6 min",
     "art": "limewash-light",
@@ -39,7 +39,7 @@ export const posts = [
   {
     "slug": "sketching-by-hand",
     "title": "Sketching by hand before pixels: our studio ritual",
-    "date": "Jul 28, 2026",
+    "date": "28 Jul 2026",
     "category": "Process",
     "readTime": "4 min",
     "art": "arch-door",
@@ -68,7 +68,7 @@ export const posts = [
   {
     "slug": "three-layers-of-light",
     "title": "Three layers of light in every room we design",
-    "date": "Jul 09, 2026",
+    "date": "9 Jul 2026",
     "category": "Lighting",
     "readTime": "5 min",
     "art": "dark-stairs",
@@ -108,7 +108,7 @@ export const posts = [
   {
     "slug": "small-space-storage",
     "title": "Storage that swallows clutter without swallowing character",
-    "date": "Jun 21, 2026",
+    "date": "21 Jun 2026",
     "category": "Small spaces",
     "readTime": "5 min",
     "art": "walk-closet",
@@ -137,7 +137,7 @@ export const posts = [
   {
     "slug": "material-first-design",
     "title": "Material-first: choosing surfaces before floor plans",
-    "date": "May 30, 2026",
+    "date": "30 May 2026",
     "category": "Materials",
     "readTime": "4 min",
     "art": "material-board",
@@ -166,7 +166,7 @@ export const posts = [
   {
     "slug": "honest-budgets",
     "title": "Budgeting: honest numbers beat hopeful ones",
-    "date": "May 02, 2026",
+    "date": "2 May 2026",
     "category": "Process",
     "readTime": "6 min",
     "art": "honest-numbers",

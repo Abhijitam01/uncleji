@@ -70,7 +70,7 @@ export function StudioSplit({
           <figcaption className="mt-5 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-6">
             <p className="font-serif text-[1.15rem] leading-snug text-ink/80 italic">
               “I still sketch every project by hand before a single line goes on screen.”
-              <span className="type-label mt-2 block text-muted not-italic">Elena Voss, founder</span>
+              <span className="type-label mt-2 block text-muted not-italic">Ira Malhotra, founder</span>
             </p>
             <Signature />
           </figcaption>

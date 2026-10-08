@@ -29,7 +29,7 @@ export function ogCard({
         </div>
         <div tw="flex w-full justify-between border-t border-[#c8cac2] pt-6 text-[22px] text-[#5f635d]">
           <span>Interior design and architecture</span>
-          <span>Greenpoint, Brooklyn</span>
+          <span>Shahpur Jat, New Delhi</span>
         </div>
       </div>
     ),

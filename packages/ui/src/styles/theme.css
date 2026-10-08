@@ -204,13 +204,13 @@
   .hero-cue { display: inline-flex; opacity: calc(1 - var(--q) * 3); }
 }
 
-/* Work reel: pinned horizontal travel on desktop, native swipe on touch. */
+/* Work reel: pinned horizontal travel driven by vertical scroll. */
 .reel-card { --c: 1; }
 .reel-card .reel-color { clip-path: inset(0 calc((1 - var(--c)) * 100%) 0 0); }
 .reel-card .reel-lines { opacity: calc(1 - var(--c)); }
-@media (min-width: 960px) and (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   .reel-pin { position: sticky; top: 0; height: 100svh; overflow: clip; }
-  .reel-track { overflow: visible !important; scroll-snap-type: none !important; will-change: transform; }
+  .reel-track { will-change: transform; }
 }
 
 /* Drafting cursor. */

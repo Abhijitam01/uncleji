@@ -347,12 +347,12 @@ export const scenes = {
        <circle cx="470" cy="300" r="26" fill="#191510"/>
        <circle cx="470" cy="300" r="10" fill="#b08d57"/>
        <text x="500" y="292" font-family="DM Sans, sans-serif" font-size="22" fill="#191510">Kiah</text>
-       <text x="500" y="318" font-family="DM Sans, sans-serif" font-size="17" fill="#6f6a5f">68 Java St, Greenpoint</text>`,
+       <text x="500" y="318" font-family="DM Sans, sans-serif" font-size="17" fill="#6f6a5f">14 Shahpur Jat, New Delhi</text>`,
   },
   "team-elena": {
     width: 640,
     height: 800,
-    label: "Portrait of Elena Voss",
+    label: "Portrait of Ira Malhotra",
     body: `<defs><linearGradient id="tp1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e7ddca"/><stop offset="1" stop-color="#d5c6aa"/></linearGradient></defs>
 <rect width="640" height="800" fill="url(#tp1)"/>
 <path d="M120 800 V580 q0 -220 200 -220 t200 220 v220 z" fill="#efe9dc"/>
@@ -367,7 +367,7 @@ export const scenes = {
   "team-marcus": {
     width: 640,
     height: 800,
-    label: "Portrait of Marcus Hale",
+    label: "Portrait of Kabir Sethi",
     body: `<defs><linearGradient id="tp2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dde4de"/><stop offset="1" stop-color="#c2ccc2"/></linearGradient></defs>
 <rect width="640" height="800" fill="url(#tp2)"/>
 <path d="M120 800 V580 q0 -220 200 -220 t200 220 v220 z" fill="#4a4237"/>
@@ -380,7 +380,7 @@ export const scenes = {
   "team-june": {
     width: 640,
     height: 800,
-    label: "Portrait of June Okafor",
+    label: "Portrait of Naina Kapoor",
     body: `<defs><linearGradient id="tp3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe4d2"/><stop offset="1" stop-color="#dccbaa"/></linearGradient></defs>
 <rect width="640" height="800" fill="url(#tp3)"/>
 <path d="M120 800 V580 q0 -220 200 -220 t200 220 v220 z" fill="#b4704f"/>
@@ -393,7 +393,7 @@ export const scenes = {
   "team-tomas": {
     width: 640,
     height: 800,
-    label: "Portrait of Tomas Lindqvist",
+    label: "Portrait of Rohan Iyer",
     body: `<defs><linearGradient id="tp4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9e6dc"/><stop offset="1" stop-color="#cfccbd"/></linearGradient></defs>
 <rect width="640" height="800" fill="url(#tp4)"/>
 <path d="M120 800 V580 q0 -220 200 -220 t200 220 v220 z" fill="#8a9375"/>

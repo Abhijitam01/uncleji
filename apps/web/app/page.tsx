@@ -20,7 +20,7 @@ import { pageMeta } from "../lib/seo";
 
 export const metadata = pageMeta({
   description:
-    "Kiah is a Brooklyn interior design and architecture studio crafting calm homes, considered light and bespoke furnishings since 2012.",
+    "Kiah is a New Delhi interior design and architecture studio crafting calm homes, considered light and bespoke furnishings since 2012.",
   path: "/",
 });
 

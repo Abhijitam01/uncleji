@@ -1,8 +1,8 @@
 export const projects = [
   {
-    "slug": "alderwood-colonial",
-    "title": "Alderwood colonial",
-    "location": "Larchmont, NY",
+    "slug": "amaltas-house",
+    "title": "Amaltas house",
+    "location": "Sainik Farms, New Delhi",
     "scope": "Full renovation",
     "category": "residential",
     "tagLabel": "Residential",
@@ -10,10 +10,10 @@ export const projects = [
     "size": "340 m²",
     "duration": "11 months",
     "art": "house-exterior",
-    "blurb": "A 1920s colonial stripped back to its bones and rebuilt around one long axis of daylight.",
+    "blurb": "A 1970s bungalow stripped back to its bones and rebuilt around one long axis of daylight.",
     "story": [
       "The house had good bones but a chopped-up plan: seven doors off one hallway, each room working hard to ignore the others. We removed four walls on the ground floor and let the staircase become the quiet centre of the home.",
-      "Materials were chosen to age gracefully — oiled oak underfoot, lime-plastered walls in warm white, and window reveals deep enough for books and coffee cups. The kitchen sits where the old parlour was, facing the maple that gave the street its name."
+      "Materials were chosen to age gracefully — oiled oak underfoot, lime-plastered walls in warm white, and window reveals deep enough for books and coffee cups. The kitchen sits where the old parlour was, facing the amaltas tree that gave the house its name."
     ],
     "services": [
       "Interior design",
@@ -28,9 +28,9 @@ export const projects = [
     ]
   },
   {
-    "slug": "tribeca-loft",
-    "title": "The Tribeca loft",
-    "location": "New York, NY",
+    "slug": "lodhi-flat",
+    "title": "The Lodhi flat",
+    "location": "Lodhi Colony, New Delhi",
     "scope": "Interior architecture",
     "category": "apartment",
     "tagLabel": "Apartment",
@@ -55,9 +55,9 @@ export const projects = [
     ]
   },
   {
-    "slug": "spruce-ridge-cabin",
-    "title": "Spruce ridge cabin",
-    "location": "Quebec, CA",
+    "slug": "deodar-ridge-cabin",
+    "title": "Deodar ridge cabin",
+    "location": "Kasauli, Himachal Pradesh",
     "scope": "New build",
     "category": "retreat",
     "tagLabel": "Retreat",
@@ -67,7 +67,7 @@ export const projects = [
     "art": "cabin-dusk",
     "blurb": "A blackened-timber cabin folded into the treeline, warmed by one enormous south pane.",
     "story": [
-      "We designed this retreat to disappear in summer and glow in winter. The charred spruce shell needs no paint and shrugs off snow; inside, a single great room holds cooking, reading and long dinners under one soft pool of light.",
+      "We designed this retreat to disappear in summer and glow in winter. The charred deodar shell needs no paint and shrugs off snow; inside, a single great room holds cooking, reading and long dinners under one soft pool of light.",
       "Every window was placed from the chair positions first — what you see while eating breakfast matters more than how the facade photographs."
     ],
     "services": [
@@ -85,7 +85,7 @@ export const projects = [
   {
     "slug": "old-station-house",
     "title": "Old station house",
-    "location": "Upstate, NY",
+    "location": "Dehradun, Uttarakhand",
     "scope": "Conversion",
     "category": "retreat",
     "tagLabel": "Adaptive reuse",
@@ -113,7 +113,7 @@ export const projects = [
   {
     "slug": "rolling-green-flat",
     "title": "Rolling green flat",
-    "location": "Brooklyn, NY",
+    "location": "Gurugram, Haryana",
     "scope": "Furnishing",
     "category": "apartment",
     "tagLabel": "Apartment",
@@ -123,7 +123,7 @@ export const projects = [
     "art": "dining-green",
     "blurb": "A furnished-in-eight-weeks flat that proves you don't need square metres to breathe.",
     "story": [
-      "Our clients moved cities with six suitcases and one deadline. We sourced every piece from within a hundred miles — vintage oak, new linen, one very patient ceramicist — and styled the whole apartment in a weekend.",
+      "Our clients moved cities with six suitcases and one deadline. We sourced every piece from within a hundred kilometres — vintage oak, new linen, one very patient ceramicist — and styled the whole apartment in a weekend.",
       "The trick in small flats is fewer, larger pieces. One proper dining table beats four compromises; the room agrees."
     ],
     "services": [
@@ -138,9 +138,9 @@ export const projects = [
     ]
   },
   {
-    "slug": "somersby-villa",
-    "title": "Somersby villa",
-    "location": "Somersby, AU",
+    "slug": "alibaug-villa",
+    "title": "Alibaug villa",
+    "location": "Alibaug, Maharashtra",
     "scope": "Architecture + interiors",
     "category": "residential",
     "tagLabel": "Villa",
@@ -166,9 +166,9 @@ export const projects = [
     ]
   },
   {
-    "slug": "maple-stone-bath",
-    "title": "Maple & stone bath",
-    "location": "Greenwich, CT",
+    "slug": "teak-stone-bath",
+    "title": "Teak & stone bath",
+    "location": "Vasant Vihar, New Delhi",
     "scope": "Room renovation",
     "category": "residential",
     "tagLabel": "Residential",
@@ -192,9 +192,9 @@ export const projects = [
     ]
   },
   {
-    "slug": "harbor-penthouse",
-    "title": "Harbour penthouse",
-    "location": "Manhattan, NY",
+    "slug": "skyline-penthouse",
+    "title": "Skyline penthouse",
+    "location": "Worli, Mumbai",
     "scope": "Interior architecture",
     "category": "apartment",
     "tagLabel": "Apartment",
@@ -202,9 +202,9 @@ export const projects = [
     "size": "180 m²",
     "duration": "9 months",
     "art": "bedroom-calm",
-    "blurb": "A penthouse bedroom wing rebuilt for slow mornings above the harbour.",
+    "blurb": "A penthouse bedroom wing rebuilt for slow mornings above the Arabian Sea.",
     "story": [
-      "The existing bedrooms faced a light well; the harbour might as well have been in another borough. We re-glazed the entire east wall and pushed the suite to the corner where dawn actually lands.",
+      "The existing bedrooms faced a light well; the sea might as well have been in another city. We re-glazed the entire east wall and pushed the suite to the corner where dawn actually lands.",
       "Sound mattered as much as view: double-leaf doors, felt-lined wardrobes and wool underfoot make the loudest thing in the morning the kettle."
     ],
     "services": [
@@ -222,7 +222,7 @@ export const projects = [
   {
     "slug": "fern-hollow-rooms",
     "title": "Fern hollow rooms",
-    "location": "Montclair, NJ",
+    "location": "Jor Bagh, New Delhi",
     "scope": "Kids rooms + playroom",
     "category": "residential",
     "tagLabel": "Residential",
@@ -246,9 +246,9 @@ export const projects = [
     ]
   },
   {
-    "slug": "atelier-workroom",
-    "title": "Atelier workroom",
-    "location": "SoHo, NY",
+    "slug": "kiah-workroom",
+    "title": "Kiah workroom",
+    "location": "Shahpur Jat, New Delhi",
     "scope": "Workplace design",
     "category": "commercial",
     "tagLabel": "Commercial",
@@ -273,9 +273,9 @@ export const projects = [
     ]
   },
   {
-    "slug": "cypress-terrace",
-    "title": "Cypress terrace garden",
-    "location": "Pasadena, CA",
+    "slug": "bougainvillea-terrace",
+    "title": "Bougainvillea terrace",
+    "location": "Golf Links, New Delhi",
     "scope": "Outdoor living",
     "category": "residential",
     "tagLabel": "Outdoor",
@@ -285,7 +285,7 @@ export const projects = [
     "art": "terrace-garden",
     "blurb": "Five planters, one pergola and an outdoor fireplace that gets used nine months a year.",
     "story": [
-      "The terrace was all hardscape and glare. We introduced layered planting — cypress for height, rosemary for scent — and a low fire bowl that anchors the evenings.",
+      "The terrace was all hardscape and glare. We introduced layered planting — frangipani for height, jasmine for scent — and a low fire bowl that anchors the evenings.",
       "Lighting stays below knee height: paths glow, plants silhouette, stars stay visible."
     ],
     "services": [
@@ -301,7 +301,7 @@ export const projects = [
   {
     "slug": "gallery-hallway",
     "title": "Gallery hallway",
-    "location": "Chicago, IL",
+    "location": "Indiranagar, Bengaluru",
     "scope": "Renovation",
     "category": "apartment",
     "tagLabel": "Apartment",

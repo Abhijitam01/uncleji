@@ -4,21 +4,21 @@ export const site = {
   name: "Kiah",
   url: "https://kiah.studio",
   description:
-    "A warm, human-centred interior design and architecture studio in Brooklyn crafting calm homes, considered light and bespoke furnishings.",
+    "A warm, human-centred interior design and architecture studio in New Delhi crafting calm homes, considered light and bespoke furnishings.",
   blurb: "An interior design & architecture studio crafting calm, personal homes since 2012.",
   email: "hello@kiah.studio",
-  phone: "+1 (212) 555-0148",
-  phoneHref: "tel:+12125550148",
-  address: ["68 Java St, Greenpoint", "Brooklyn, NY 11222"],
-  street: "68 Java St",
-  neighborhood: "Greenpoint",
-  city: "Brooklyn",
-  region: "NY",
-  postalCode: "11222",
-  country: "US",
-  latitude: 40.7304,
-  longitude: -73.9572,
-  locality: "Greenpoint, Brooklyn",
+  phone: "+91 11 4055 0148",
+  phoneHref: "tel:+911140550148",
+  address: ["14 Shahpur Jat, Siri Fort", "New Delhi 110049"],
+  street: "14 Shahpur Jat",
+  neighborhood: "Shahpur Jat",
+  city: "New Delhi",
+  region: "Delhi",
+  postalCode: "110049",
+  country: "IN",
+  latitude: 28.5494,
+  longitude: 77.2196,
+  locality: "Shahpur Jat, New Delhi",
   foundingYear: "2012",
   socials: [
     { label: "Instagram", short: "Ig", href: "https://www.instagram.com/kiah" },
@@ -179,7 +179,7 @@ export const serviceRows: Array<{
     body: "Made-to-measure pieces from trusted local workshops — oak tables, linen upholstery and storage that swallows clutter without swallowing character.",
     items: [
       "Designed-and-drawn by the studio",
-      "Built by two partner workshops in Brooklyn",
+      "Built by two partner workshops in Kirti Nagar",
       "Solid oak, walnut & linen as standard",
       "White-glove delivery and install",
     ],
@@ -204,7 +204,7 @@ export const faqs = [
   {
     num: "Q1",
     title: "What does a typical project cost?",
-    body: "A furnished room refresh typically lands between $25k–60k; full-home renovations run $350k+. Every proposal carries ranges with clear levers, so you always know what moves the number.",
+    body: "A furnished room refresh typically lands between ₹15–40 lakh; full-home renovations start around ₹1.5 crore. Every proposal carries ranges with clear levers, so you always know what moves the number.",
   },
   {
     num: "Q2",
@@ -218,33 +218,33 @@ export const faqs = [
   },
   {
     num: "Q4",
-    title: "Do you work outside New York?",
-    body: "Yes — recent projects span Quebec, Chicago and Australia. Remote builds get the same weekly previews, plus scheduled site visits at every milestone.",
+    title: "Do you work outside Delhi?",
+    body: "Yes — recent projects span Mumbai, Bengaluru, Alibaug and the hills of Himachal. Remote builds get the same weekly previews, plus scheduled site visits at every milestone.",
   },
 ] as const;
 
 export const team: Array<{ name: string; role: string; art: ArtName }> = [
-  { name: "Elena Voss", role: "Founder and principal designer", art: "team-elena" },
-  { name: "Marcus Hale", role: "Head of architecture", art: "team-marcus" },
-  { name: "June Okafor", role: "Interiors & styling lead", art: "team-june" },
-  { name: "Tomas Lindqvist", role: "Project architect", art: "team-tomas" },
+  { name: "Ira Malhotra", role: "Founder and principal designer", art: "team-elena" },
+  { name: "Kabir Sethi", role: "Head of architecture", art: "team-marcus" },
+  { name: "Naina Kapoor", role: "Interiors & styling lead", art: "team-june" },
+  { name: "Rohan Iyer", role: "Project architect", art: "team-tomas" },
 ];
 
 export const milestones = [
   {
     year: "2012",
-    title: "A table in Greenpoint",
-    body: "Elena leaves a large commercial firm, buys a secondhand drafting table and takes on two apartment renovations.",
+    title: "A table in Shahpur Jat",
+    body: "Ira leaves a large commercial firm, buys a secondhand drafting table and takes on two apartment renovations.",
   },
   {
     year: "2015",
     title: "First full build",
-    body: "The Spruce Lane house — ground-up architecture, interiors and furniture. Still the studio’s most requested case study.",
+    body: "The Amaltas house — ground-up architecture, interiors and furniture. Still the studio’s most requested case study.",
   },
   {
     year: "2019",
     title: "Licensed architecture",
-    body: "Marcus joins and the practice adds full architectural services under one roof.",
+    body: "Kabir joins and the practice adds full architectural services under one roof.",
   },
   {
     year: "2022",
@@ -266,9 +266,9 @@ export const ratings = [
 ] as const;
 
 export const hours = [
-  { day: "Mon–Fri", time: "9:00–18:00" },
+  { day: "Mon–Fri", time: "10:00–19:00" },
   { day: "Sat", time: "By appointment" },
-  { day: "Sun", time: "Closed, we’re at the flea market" },
+  { day: "Sun", time: "Closed, we’re at Sunder Nursery" },
 ] as const;
 
 export const projectTypes = [
@@ -279,7 +279,7 @@ export const projectTypes = [
   "Furnishing & styling only",
 ] as const;
 
-export const budgetRanges = ["Under $50k", "$50k – $150k", "$150k – $350k", "$350k+"] as const;
+export const budgetRanges = ["Under ₹25 lakh", "₹25–75 lakh", "₹75 lakh – ₹2 crore", "₹2 crore+"] as const;
 
 export const projectFilters = [
   { id: "all", label: "All work" },

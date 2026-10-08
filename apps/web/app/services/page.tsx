@@ -4,7 +4,7 @@ import { BreadcrumbJsonLd, JsonLd, faqGraph, pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta({
   title: "Services",
-  description: "Interior design, lighting, bespoke furnishings and construction from one Brooklyn studio.",
+  description: "Interior design, lighting, bespoke furnishings and construction from one New Delhi studio.",
   path: "/services",
 });
 

@@ -69,7 +69,7 @@ export function SiteFooter({
           </Link>
           <div className="mt-[clamp(2.5rem,5vw,4rem)] grid gap-8 min-[960px]:grid-cols-12 min-[960px]:items-end">
             <p className="type-lead text-paper/68 min-[960px]:col-span-5">
-              Tell us what isn’t working today. Elena or Marcus will reply with real thoughts rather than a brochure.
+              Tell us what isn’t working today. Ira or Kabir will reply with real thoughts rather than a brochure.
             </p>
             <div className="flex flex-wrap items-center gap-3 min-[960px]:col-span-5 min-[960px]:col-start-8 min-[960px]:justify-end">
               <Button href="/contact" variant="light" size="lg">
@@ -86,7 +86,7 @@ export function SiteFooter({
         <div className="col-span-2 grid content-start gap-5 min-[1080px]:col-span-4">
           <Logo light />
           <p className="max-w-[30ch] font-serif text-[1.125rem] leading-snug text-paper/62">
-            Interior design and architecture for calm, personal homes. Drawn in Greenpoint since 2012.
+            Interior design and architecture for calm, personal homes. Drawn in Shahpur Jat since 2012.
           </p>
         </div>
         {columns.map((column) => (

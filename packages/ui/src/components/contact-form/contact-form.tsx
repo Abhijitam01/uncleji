@@ -62,7 +62,7 @@ export function ContactForm({
         </span>
         <h2 className="type-h2">Enquiry sent.</h2>
         <p className="type-lead max-w-[34ch] text-ink/72">
-          Elena or Marcus will reply within one working day. If it’s urgent, call the studio.
+          Ira or Kabir will reply within one working day. If it’s urgent, call the studio.
         </p>
         <Button href="/portfolio" variant="ghost">
           Browse the portfolio

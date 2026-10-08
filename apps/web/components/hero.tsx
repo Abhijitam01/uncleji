@@ -56,7 +56,7 @@ export function Hero() {
         <div className="hero-head shell pt-[calc(var(--header)+2rem)]">
           <div className="type-label animate-fade flex flex-wrap justify-between gap-x-6 gap-y-1 text-muted">
             <span>Interior design and architecture</span>
-            <span>Greenpoint, Brooklyn, since 2012</span>
+            <span>Shahpur Jat, New Delhi, since 2012</span>
           </div>
           <h1 className="mt-[clamp(1.5rem,4svh,3rem)] text-[clamp(3rem,11vw,5rem)] leading-[0.88] font-medium tracking-[-0.055em] min-[960px]:text-[clamp(3rem,6.4vw,9rem)]">
             {lines.map((line, index) => (
@@ -103,7 +103,7 @@ export function Hero() {
             <figcaption className="type-label absolute bottom-3 left-3 flex items-center gap-4 rounded-full bg-paper/85 py-2 pr-4 pl-3 backdrop-blur-sm">
               <span className="flex items-center gap-2">
                 <NorthMark className="text-falu" />
-                Living room, Alderwood colonial
+                Living room, Amaltas house
                 <span className="text-muted tabular-nums">1:50</span>
               </span>
               <span className="hero-cue items-center gap-2 text-muted">

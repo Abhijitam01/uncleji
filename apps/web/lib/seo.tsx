@@ -78,7 +78,7 @@ export function studioGraph() {
         url: site.url,
         name: site.name,
         description: site.description,
-        inLanguage: "en-US",
+        inLanguage: "en-IN",
         publisher: { "@id": studioId },
       },
       {
@@ -88,7 +88,7 @@ export function studioGraph() {
         url: site.url,
         description: site.description,
         email: site.email,
-        telephone: "+1-212-555-0148",
+        telephone: "+91-11-4055-0148",
         image: `${site.url}/opengraph-image`,
         foundingDate: site.foundingYear,
         priceRange: "$$$",
@@ -105,13 +105,13 @@ export function studioGraph() {
           latitude: site.latitude,
           longitude: site.longitude,
         },
-        areaServed: ["New York", "Brooklyn", "United States"],
+        areaServed: ["New Delhi", "Delhi NCR", "India"],
         openingHoursSpecification: [
           {
             "@type": "OpeningHoursSpecification",
             dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            opens: "09:00",
-            closes: "18:00",
+            opens: "10:00",
+            closes: "19:00",
           },
           {
             "@type": "OpeningHoursSpecification",
@@ -188,7 +188,7 @@ export function articleGraph(post: Post, published: string) {
     datePublished: published,
     dateModified: published,
     articleSection: post.category,
-    inLanguage: "en-US",
+    inLanguage: "en-IN",
     mainEntityOfPage: url,
     url,
     image: `${url}/opengraph-image`,

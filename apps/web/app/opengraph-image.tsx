@@ -1,6 +1,6 @@
 import { ogCard, ogContentType, ogSize } from "../lib/og";
 
-export const alt = "Kiah — interior design and architecture studio in Brooklyn";
+export const alt = "Kiah — interior design and architecture studio in New Delhi";
 export const size = ogSize;
 export const contentType = ogContentType;
 

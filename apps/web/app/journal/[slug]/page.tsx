@@ -70,7 +70,7 @@ export default async function JournalPostPage({ params }: { params: Promise<Para
             <p>
               Written by the studio
               <br />
-              <span className="text-ink">Kiah, Greenpoint</span>
+              <span className="text-ink">Kiah, New Delhi</span>
             </p>
             <div>
               <p>Share</p>
